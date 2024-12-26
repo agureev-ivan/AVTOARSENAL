@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Транспортна компанія "АВТОАРСЕНАЛ"</title>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #2e7d32;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+        header img {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            height: 60px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+        nav {
+            background-color: #3a9b3e;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ff6f61;
+        }
+        .container {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .about {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .about h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #2e7d32;
+        }
+        .about-content {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .about-text {
+            flex: 1;
+            line-height: 1.8;
+            color: #555;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .service {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            flex: 1 1 calc(33.333% - 20px);
+            box-sizing: border-box;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .service img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        footer {
+            background-color: #2e7d32;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #ffccbc;
+        }
+        @media (max-width: 768px) {
+            .about-content, .services {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Логотип компанії">
+        <h1>"АВТОАРСЕНАЛ"</h1>
+        <p>Ваш надійний партнер у сфері оренди спецтехніки</p>
+    </header>
+    <nav>
+        <a href="#about">Про нас</a>
+        <a href="#services">Послуги</a>
+        <a href="#contacts">Контакти</a>
+    </nav>
+    <div class="container">
+        <section id="about" class="about">
+            <h2>Про нас</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Компанія "АВТОАРСЕНАЛ" спеціалізується на оренді спецтехніки для виконання будівельних, монтажних та інших завдань.</p>
+                    <p>Ми пропонуємо сучасне обладнання, яке відповідає найвищим стандартам безпеки.</p>
+                    <p>Наші клієнти довіряють нам завдяки професійному підходу та високій якості послуг.</p>
+                    <p>Команда досвідчених фахівців забезпечує оперативну доставку техніки та консультації.</p>
+                    <p>"АВТОАРСЕНАЛ" - ваш партнер у вирішенні найскладніших завдань.</p>
+                </div>
+            </div>
+        </section>
+        <section id="services">
+            <h2>Послуги</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Оренда кранів</h3>
+                    <img src="images/crane.jpg" alt="Оренда кранів">
+                    <p>Надійні крани для будівельних і монтажних робіт.</p>
+                </div>
+                <div class="service">
+                    <h3>Оренда маніпуляторів</h3>
+                    <img src="images/manipulator.jpg" alt="Оренда маніпуляторів">
+                    <p>Універсальна техніка для завантажувально-розвантажувальних робіт.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contacts">
+            <h2>Контакти</h2>
+            <p><strong>Телефон:</strong> (095) 19-19-900 | (099) 534-30-30 | (067) 309-97-97</p>
+            <p><strong>Email:</strong> avtoarsenal-2018@ukr.net</p>
+            <p><strong>Адреса:</strong> Ветеринарна вулиця, 22, оф. 405, Полтава, Полтавська область, Україна, 36000</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 "АВТОАРСЕНАЛ". Усі права захищені.</p>
+    </footer>
+</body>
+</html>
